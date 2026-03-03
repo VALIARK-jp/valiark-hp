@@ -4,75 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>お問い合わせ - VALIARK</title>
+    <meta name="description" content="構想段階から相談可能。AI開発、技術責任の委託についてお気軽にご相談ください。" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- Common Header Container -->
     <div id="header-container"></div>
 
-    <!-- Page Header -->
     <section class="page-header">
       <div class="container">
         <h1 class="page-title">お問い合わせ</h1>
-        <p class="page-subtitle">Contact — 共創パートナー募集</p>
+        <p class="page-subtitle">Contact</p>
         <div class="page-philosophy">
-          <p><em>「才能を、導け。努力を、孤独にしない。」</em></p>
-          <p>
-            私たちは、才能を導くプロジェクトの共創パートナーを求めています。
-          </p>
+          <p>構想段階から相談可能です。技術責任の引き受けについてお気軽にご連絡ください。</p>
         </div>
       </div>
     </section>
 
-    <!-- Trust Strip (portfolio highlights) -->
-    <section class="results-strip">
-      <div class="container results-container">
-        <div class="result-item">
-          <div class="result-number">★5</div>
-          <div class="result-label">App Store評価</div>
-        </div>
-        <div class="result-item">
-          <div class="result-number">¥2.5M</div>
-          <div class="result-label">受託規模</div>
-        </div>
-        <div class="result-item">
-          <div class="result-number">Expo 2025</div>
-          <div class="result-label">出展実績</div>
-        </div>
-        <div class="result-item">
-          <div class="result-number">2ヶ月</div>
-          <div class="result-label">初リリースまで</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Introduction -->
-    <section class="contact-intro section">
+    <section class="section">
       <div class="container">
-        <h2 class="section-title">Plan Naviの理念に共感する皆さまへ</h2>
         <p class="section-text large">
-          「やる気があるのに、やり方がわからない」──この課題をAIで解決するPlan
-          Naviの開発を通じて、私たちは「才能を、見逃さない社会をつくる。」という理念を掲げました。AI
-          Learning・AI Mobility・AI Sports・AI Education
-          Consultingの各領域で、AIによって機会損失をなくす社会の実現に向けて、共創パートナーシップを築いていきませんか。
+          設計から実装、運用まで。AI基盤設計、サービス基盤構築、CTO機能提供について、構想段階からのご相談を承ります。
         </p>
-        <div class="contact-mission">
-          <p class="contact-mission-text">
-            <strong>「努力の方向を導く」</strong
-            >技術で、教育・モビリティ・スポーツ・すべての領域において、人が才能を発揮できる社会基盤の構築を目指しています。
-          </p>
-        </div>
       </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form-section section bg-light">
+    <section class="section bg-subtle">
       <div class="container">
         <div class="contact-form-container">
           <form
@@ -82,57 +44,25 @@
             method="POST"
           >
             <div class="form-group">
-              <label for="inquiryType" class="form-label"
-                >お問い合わせ種別 <span class="required">*</span></label
-              >
+              <label class="form-label">お問い合わせ種別 <span class="required">*</span></label>
               <div class="radio-group">
                 <label class="radio-label">
-                  <input
-                    type="radio"
-                    name="inquiryType"
-                    value="plan-navi-collaboration"
-                    required
-                  />
+                  <input type="radio" name="inquiryType" value="ai-development" required />
                   <span class="radio-custom"></span>
-                  Plan Navi協業・導入相談
+                  AI開発・基盤設計の相談
                 </label>
                 <label class="radio-label">
-                  <input
-                    type="radio"
-                    name="inquiryType"
-                    value="education-partnership"
-                    required
-                  />
+                  <input type="radio" name="inquiryType" value="cto-advisory" required />
                   <span class="radio-custom"></span>
-                  教育機関・自治体連携
+                  CTO機能・技術アドバイザリー
                 </label>
                 <label class="radio-label">
-                  <input
-                    type="radio"
-                    name="inquiryType"
-                    value="recruitment-internship"
-                    required
-                  />
+                  <input type="radio" name="inquiryType" value="education" required />
                   <span class="radio-custom"></span>
-                  採用・インターンシップ
+                  教育機関・地域プロジェクト
                 </label>
                 <label class="radio-label">
-                  <input
-                    type="radio"
-                    name="inquiryType"
-                    value="investment-media"
-                    required
-                  />
-                  <span class="radio-custom"></span>
-                  投資・取材依頼
-                </label>
-                <label class="radio-label">
-                  <input
-                    type="radio"
-                    name="inquiryType"
-                    value="other"
-                    required
-                  />
+                  <input type="radio" name="inquiryType" value="other" required />
                   <span class="radio-custom"></span>
                   その他
                 </label>
@@ -141,43 +71,19 @@
 
             <div class="form-row">
               <div class="form-group">
-                <label for="lastName" class="form-label"
-                  >姓 <span class="required">*</span></label
-                >
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  class="form-input"
-                  required
-                />
+                <label for="lastName" class="form-label">姓 <span class="required">*</span></label>
+                <input type="text" id="lastName" name="lastName" class="form-input" required />
               </div>
               <div class="form-group">
-                <label for="firstName" class="form-label"
-                  >名 <span class="required">*</span></label
-                >
-                <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  class="form-input"
-                  required
-                />
+                <label for="firstName" class="form-label">名 <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" class="form-input" required />
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
-                <label for="email" class="form-label"
-                  >メールアドレス <span class="required">*</span></label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-input"
-                  required
-                />
+                <label for="email" class="form-label">メールアドレス <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" required />
               </div>
               <div class="form-group">
                 <label for="phone" class="form-label">電話番号</label>
@@ -185,74 +91,25 @@
               </div>
             </div>
 
-            <div class="form-group" id="companyGroup">
+            <div class="form-group">
               <label for="company" class="form-label">会社名・団体名</label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                class="form-input"
-              />
-            </div>
-
-            <div class="form-group" id="positionGroup">
-              <label for="position" class="form-label">役職・部署</label>
-              <input
-                type="text"
-                id="position"
-                name="position"
-                class="form-input"
-              />
-            </div>
-
-            <div class="form-group" id="facultyGroup" style="display: none">
-              <label for="faculty" class="form-label">学部・学科</label>
-              <input
-                type="text"
-                id="faculty"
-                name="faculty"
-                class="form-input"
-              />
-            </div>
-
-            <div class="form-group" id="gradeGroup" style="display: none">
-              <label for="grade" class="form-label">学年</label>
-              <select id="grade" name="grade" class="form-select">
-                <option value="">選択してください</option>
-                <option value="1">1年生</option>
-                <option value="2">2年生</option>
-                <option value="3">3年生</option>
-                <option value="4">4年生</option>
-                <option value="master1">修士1年</option>
-                <option value="master2">修士2年</option>
-                <option value="doctor">博士課程</option>
-              </select>
+              <input type="text" id="company" name="company" class="form-input" />
             </div>
 
             <div class="form-group">
-              <label for="subject" class="form-label"
-                >件名 <span class="required">*</span></label
-              >
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                class="form-input"
-                required
-              />
+              <label for="subject" class="form-label">件名 <span class="required">*</span></label>
+              <input type="text" id="subject" name="subject" class="form-input" required />
             </div>
 
             <div class="form-group">
-              <label for="message" class="form-label"
-                >お問い合わせ内容 <span class="required">*</span></label
-              >
+              <label for="message" class="form-label">お問い合わせ内容 <span class="required">*</span></label>
               <textarea
                 id="message"
                 name="message"
                 class="form-textarea"
                 rows="8"
                 required
-                placeholder="具体的なご相談内容、プロジェクトの概要、期待される成果物、予算感、スケジュールなどをご記入ください。"
+                placeholder="プロジェクトの概要、ご相談内容、予想されるスケジュールなどをご記入ください。"
               ></textarea>
             </div>
 
@@ -260,193 +117,35 @@
               <label class="checkbox-label">
                 <input type="checkbox" name="privacy" required />
                 <span class="checkbox-custom"></span>
-                <a href="#" class="privacy-link">プライバシーポリシー</a
-                >に同意します <span class="required">*</span>
+                <a href="#" class="privacy-link">プライバシーポリシー</a>に同意します <span class="required">*</span>
               </label>
             </div>
 
-            <!-- Honeypot field for spam protection -->
-            <input
-              type="text"
-              name="_gotcha"
-              style="position: absolute; left: -9999px; width: 1px; height: 1px"
-              tabindex="-1"
-              autocomplete="off"
-            />
+            <input type="text" name="_gotcha" style="position:absolute;left:-9999px;width:1px;height:1px" tabindex="-1" autocomplete="off" />
 
             <div class="form-submit">
-              <button
-                type="submit"
-                class="btn btn-primary btn-large"
-                id="submitButton"
-              >
-                送信する
-              </button>
+              <button type="submit" class="btn btn-primary btn-large" id="submitButton">送信する</button>
             </div>
-            <p
-              id="formStatus"
-              style="margin-top: 1rem; text-align: center; font-weight: 500"
-            ></p>
+            <p id="formStatus" class="form-status"></p>
           </form>
         </div>
       </div>
     </section>
 
-    <!-- Contact Information -->
-    <section class="contact-info section">
+    <section class="section">
       <div class="container">
-        <div class="contact-info-grid">
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
-                  stroke="#FF0000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <polyline
-                  points="22,6 12,13 2,6"
-                  stroke="#FF0000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <h3 class="contact-info-title">メールでのお問い合わせ</h3>
-            <p class="contact-info-description">
-              24時間受付中。通常2営業日以内にご返信いたします。
-            </p>
-            <a href="mailto:contact@valiark.jp" class="contact-info-link"
-              >contact@valiark.jp</a
-            >
-          </div>
-
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77383 17.3147 6.72534 15.2662 5.19 12.85C3.49998 10.2412 2.44818 7.27099 2.12 4.18C2.09501 3.90347 2.12788 3.62476 2.21649 3.36162C2.3051 3.09849 2.44748 2.85669 2.63519 2.65162C2.82291 2.44655 3.05098 2.28271 3.30503 2.17052C3.55909 2.05833 3.83396 2.00026 4.11 2H7.11C7.59531 1.99522 8.06674 2.16708 8.43935 2.48353C8.81196 2.79999 9.06263 3.23945 9.14 3.72C9.28393 4.68007 9.54781 5.61273 9.92 6.5C10.0618 6.88792 10.0944 7.31048 10.0145 7.72024C9.93463 8.13 9.74532 8.50875 9.47 8.82L8.09 10.2C9.51355 12.6793 11.5207 14.6864 14 16.11L15.38 14.73C15.6912 14.4547 16.07 14.2654 16.4798 14.1855C16.8895 14.1056 17.3121 14.1382 17.7 14.28C18.5873 14.6522 19.5199 14.9161 20.48 15.06C20.9658 15.1381 21.4094 15.3936 21.7265 15.7736C22.0435 16.1535 22.2131 16.6307 22.21 17.12L22 16.92Z"
-                  stroke="#FF0000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <h3 class="contact-info-title">お急ぎの場合</h3>
-            <p class="contact-info-description">
-              緊急のご相談やお急ぎの案件については、まずはメールでご連絡ください。
-            </p>
-            <p class="contact-info-link">平日 10:00-18:00</p>
-          </div>
-
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.3639 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
-                  stroke="#FF0000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <circle
-                  cx="12"
-                  cy="10"
-                  r="3"
-                  stroke="#FF0000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <h3 class="contact-info-title">所在地</h3>
-            <p class="contact-info-description">
-              大阪大学を拠点として活動しています。
-            </p>
-            <p class="contact-info-link">大阪府吹田市</p>
-          </div>
-        </div>
+        <p class="section-text" style="text-align:center">
+          通常2営業日以内にご返信いたします。<br />
+          <a href="mailto:contact@valiark.jp" style="color:var(--color-accent)">contact@valiark.jp</a>
+        </p>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section section bg-light">
-      <div class="container">
-        <h2 class="section-title">よくあるご質問</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <h3 class="faq-question">
-              Q. プロジェクトの費用はどのくらいかかりますか？
-            </h3>
-            <p class="faq-answer">
-              プロジェクトの規模や内容によって異なりますが、学生ならではのコストパフォーマンスを実現しています。まずはお気軽にご相談ください。無料でお見積もりを作成いたします。
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">
-              Q. どのような業界の案件に対応できますか？
-            </h3>
-            <p class="faq-answer">
-              製造業、小売業、金融業、医療・ヘルスケア、教育など、様々な業界のAI・DX案件に対応可能です。業界固有の課題についても、研究を通じて培った知識と技術で解決策を提案します。
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">
-              Q. プロジェクトの期間はどのくらいですか？
-            </h3>
-            <p class="faq-answer">
-              プロジェクトの内容により異なりますが、小規模なものは1-2ヶ月、大規模なものは3-6ヶ月程度を想定しています。スケジュールについてもお気軽にご相談ください。
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">
-              Q. VALIARKに参加するにはどうすればよいですか？
-            </h3>
-            <p class="faq-answer">
-              大阪大学の学生であれば、どなたでも参加可能です。プログラミング経験や専攻は問いません。まずはお問い合わせフォームから「参加希望」を選択してご連絡ください。
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">
-              Q. 秘密保持契約（NDA）は締結できますか？
-            </h3>
-            <p class="faq-answer">
-              はい、プロジェクト開始前に秘密保持契約を締結いたします。お客様の機密情報は厳重に管理し、プロジェクト終了後も適切に取り扱います。
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <img src="images/logo.png" alt="VALIARK" class="logo" />
+            <a href="index.html"><img src="images/valiark.logo.svg" alt="VALIARK" class="logo" /></a>
           </div>
           <nav class="footer-nav">
             <a href="index.html" class="footer-link">ホーム</a>
@@ -457,7 +156,7 @@
           </nav>
         </div>
         <div class="footer-bottom">
-          <p class="copyright">2025 VALIARK</p>
+          <p class="copyright">© 2025 VALIARK</p>
         </div>
       </div>
     </footer>

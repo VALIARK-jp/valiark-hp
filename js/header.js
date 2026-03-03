@@ -6,11 +6,13 @@ function createHeader() {
       <nav class="nav">
         <div class="nav-container">
           <div class="nav-logo">
-            <img
-              src="./images/無題27_20250724154900.PNG"
-              alt="VALIARK - 次世代の知性が、ビジネスを加速させる"
-              class="logo"
-            />
+            <a href="index.html">
+              <img
+                src="./images/valiark.logo.svg"
+                alt="VALIARK"
+                class="logo"
+              />
+            </a>
           </div>
           <ul class="nav-menu">
             <li class="nav-item">
@@ -82,16 +84,8 @@ function setActiveNavLink() {
 function initHeaderStyling() {
   const header = document.querySelector(".header");
   if (header) {
-    // 常に暗い背景色に設定
-    header.style.backgroundColor = "rgba(20, 20, 20, 0.95)";
-    header.style.boxShadow = "0 2px 20px rgba(255, 255, 255, 0.1)";
-
-    // スクロール時の色変更を無効化
-    window.addEventListener("scroll", function () {
-      // 色を固定（変更しない）
-      header.style.backgroundColor = "rgba(20, 20, 20, 0.95)";
-      header.style.boxShadow = "0 2px 20px rgba(255, 255, 255, 0.1)";
-    });
+    header.style.backgroundColor = "rgba(255, 255, 255, 0.98)";
+    header.style.boxShadow = "0 1px 0 rgba(226, 232, 240, 0.8)";
   }
 }
 
