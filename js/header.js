@@ -28,6 +28,9 @@ function createHeader() {
               <a href="works.html" class="nav-link" data-page="works">実績紹介</a>
             </li>
             <li class="nav-item">
+              <a href="news.html" class="nav-link" data-page="news">お知らせ</a>
+            </li>
+            <li class="nav-item">
               <a href="contact.html" class="nav-link" data-page="contact">お問い合わせ</a>
             </li>
           </ul>

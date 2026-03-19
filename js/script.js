@@ -120,6 +120,7 @@ function initScrollAnimations() {
 // === CONTACT FORM FUNCTIONALITY ===
 function initContactForm() {
   const form = document.getElementById("contactForm");
+  const inquiryTypeSelect = document.querySelector('select[name="inquiryType"]');
   const inquiryTypeRadios = document.querySelectorAll(
     'input[name="inquiryType"]'
   );
@@ -129,12 +130,19 @@ function initContactForm() {
   const gradeGroup = document.getElementById("gradeGroup");
 
   if (form) {
-    // Handle inquiry type change
-    inquiryTypeRadios.forEach((radio) => {
-      radio.addEventListener("change", function () {
+    // Handle inquiry type change (select or radio)
+    if (inquiryTypeSelect) {
+      inquiryTypeSelect.addEventListener("change", function () {
         handleInquiryTypeChange(this.value);
       });
-    });
+      handleInquiryTypeChange(inquiryTypeSelect.value);
+    } else {
+      inquiryTypeRadios.forEach((radio) => {
+        radio.addEventListener("change", function () {
+          handleInquiryTypeChange(this.value);
+        });
+      });
+    }
 
     // Handle form submission
     form.addEventListener("submit", function (e) {
@@ -207,7 +215,7 @@ function initContactForm() {
         }
         
         // Reset form visibility
-        handleInquiryTypeChange("business");
+        handleInquiryTypeChange("");
       } else {
         const errorData = await response.json();
         throw new Error(errorData.error || "送信に失敗しました");
